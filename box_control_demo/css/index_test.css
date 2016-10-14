@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F1F5F;
+	background-image: url(../sources/images/bg-loving.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: box;
+	display: -moz-box;
+	box-orient: horizontal;
+	box-pack: center; /*设置子容器水平位置分布*/
+	-moz-box-pack: center;
+	box-align: center;  /*设置子容器竖直位置分布*/
+	-moz-box-align: center;
+    orient: horizontal; /*设置元素为盒子显示*/
+    -moz-orient: horizontal;
+}
+
+#box {
+    border: solid 3px #FFF;
+    box-align: center;
+    -moz-box-align: center;
+}
+
+#box img {
+    width: 400px;
+    height: 268px;
+}
