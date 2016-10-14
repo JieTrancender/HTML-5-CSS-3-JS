@@ -1,0 +1,36 @@
+body {
+    display: box;
+    display: -moz-box;
+    orient: horizontal; /*设置元素为盒子显示*/
+    box-orient: horizontal; /*设置取向标准设置*/
+    -moz-box-orient: horizontal;
+    box-direction: reverse; /*控制子元素排列顺序*/
+    -moz-box-direction: reverse;
+    /*box-ordinal-group:<integer>属性控制盒子位置，自然数从1开始*/
+}
+
+#left {
+    width: 200px;
+    height: 500px;
+    background-color: #9c3;
+    text-align: center;
+    border: solid 1px #060;
+}
+
+/*对main和right可使用box-flex控制盒子弹性空间*/
+
+#main {
+    width: 600px;
+    height: 500px;
+    background-color: #690;
+    border: solid 1px #060;
+    text-align: center;
+}
+
+#right {
+    width: 200px;
+    height: 500px;
+    background-color: #9c3;
+    build: solid 1px #060;
+    text-align: center;
+}

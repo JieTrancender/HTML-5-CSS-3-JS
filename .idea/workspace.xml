@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3f5d74-0bcc-4aa0-9d97-5279660ca16c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_third/sources/images/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_third/sources/images/bg-loving.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img_control_demo/sources/images/big-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/background_control_demo/html/index_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_second/css/index_test.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_second/html/index_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_third/css/index_test.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo_third/html/index_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img_control_demo/html/index_test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media_control_demo/index_test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/box_control_demo/css/index_test.css" afterPath="$PROJECT_DIR$/box_control_demo/css/index_test.css" />
     </list>
-    <list id="01567546-fa90-4069-a07e-ed48b8b1bebb" name="Failed commit: Default" comment="add box_control_test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/box_control_demo/html/index_test.html" />
-    </list>
+    <list id="01567546-fa90-4069-a07e-ed48b8b1bebb" name="Failed commit: Default" comment="add box_control_test" />
     <ignored path="HTML-5-CSS-3-JS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,34 +36,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="information_bar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/list_control_demo/html/information_bar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/media_control_demo/index_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index_test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box_control_demo/html/index_test.html">
+        <entry file="file://$PROJECT_DIR$/img_control_demo/html/index_test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="275">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_test.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/box_control_demo/css/index_test.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="banner.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/box_control_demo/sources/images/banner.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -77,6 +97,14 @@
         <option value="$PROJECT_DIR$/list_control_demo/html/information_bar.html" />
         <option value="$PROJECT_DIR$/box_control_demo/html/index_test.html" />
         <option value="$PROJECT_DIR$/box_control_demo/css/index_test.css" />
+        <option value="$PROJECT_DIR$/box_control_demo_second/html/index.html" />
+        <option value="$PROJECT_DIR$/box_control_demo_second/html/index_test.html" />
+        <option value="$PROJECT_DIR$/box_control_demo_second/css/index_test.css" />
+        <option value="$PROJECT_DIR$/box_control_demo_third/css/index_test.css" />
+        <option value="$PROJECT_DIR$/box_control_demo_third/html/index_test.html" />
+        <option value="$PROJECT_DIR$/background_control_demo/html/index_test.html" />
+        <option value="$PROJECT_DIR$/img_control_demo/html/index_test.html" />
+        <option value="$PROJECT_DIR$/media_control_demo/index_test.html" />
       </list>
     </option>
   </component>
@@ -87,10 +115,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="528" />
-    <option name="y" value="96" />
+    <option name="x" value="928" />
+    <option name="y" value="102" />
     <option name="width" value="1272" />
-    <option name="height" value="1000" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -146,51 +174,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="box_control_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML-5-CSS-3-JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML-5-CSS-3-JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="box_control_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML-5-CSS-3-JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML-5-CSS-3-JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="box_control_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="media_control_demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -207,12 +191,32 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="E:/Git/bin/git.exe" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index_test.html">
-    <configuration default="false" name="information_bar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HTML-5-CSS-3-JS/list_control_demo/html/information_bar.html">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\HTML-5-CSS-3-JS\media_control_demo" />
+      <recent name="F:\HTML-5-CSS-3-JS\img_control_demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\HTML-5-CSS-3-JS\box_control_demo_third\sources\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index_test.html (5)">
+    <configuration default="false" name="index_test.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/box_control_demo_second/html/index_test.html">
       <method />
     </configuration>
-    <configuration default="false" name="index_test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/box_control_demo/html/index_test.html">
+    <configuration default="false" name="index_test.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/box_control_demo_third/html/index_test.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index_test.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/background_control_demo/html/index_test.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index_test.html (4)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/img_control_demo/html/index_test.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index_test.html (5)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HTML-5-CSS-3-JS/media_control_demo/index_test.html">
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -645,14 +649,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.information_bar.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (2)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (3)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (4)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (5)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.information_bar.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (5)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (4)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (3)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (2)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index_test.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -671,15 +681,15 @@
       <updated>1476379067226</updated>
       <workItem from="1476379071044" duration="704000" />
       <workItem from="1476381214684" duration="2065000" />
-      <workItem from="1476422406829" duration="2686000" />
+      <workItem from="1476422406829" duration="9064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5455000" />
+    <option name="totallyTimeSpent" value="11833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="528" y="96" width="1272" height="1000" extended-state="0" />
+    <frame x="928" y="102" width="1272" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -758,14 +768,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list_control_demo/html/information_bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/box_control_demo/sources/images/bg.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -784,10 +786,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo/sources/images/bg-loving.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/box_control_demo/css/index_test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="275">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo_second/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo_second/html/index_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo_second/css/index_test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo_third/html/index_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background_control_demo/html/index_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/box_control_demo_third/css/index_test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img_control_demo/html/index_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_control_demo/html/information_bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media_control_demo/index_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="137" column="11" selection-start-line="137" selection-start-column="11" selection-end-line="137" selection-end-column="11" />
           <folding />
         </state>
       </provider>

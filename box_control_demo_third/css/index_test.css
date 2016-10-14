@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1f1f8;
+    background-image: url(../sources/images/bg-loving.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: box;
+    display: -moz-box;
+    box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-pack: center;
+    -moz-box-pack: center;
+    box-align: center;
+    -moz-box-align: center;
+}
+
+#box {
+    border: solid 5px #fff;
+}
+
+#box img{
+    width: 300px;
+    height: 250px;
+}
