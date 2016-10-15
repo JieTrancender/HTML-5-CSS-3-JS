@@ -6,6 +6,6 @@
 	<link href = "../css/index_test.css" rel = "stylesheet" type = "text/css" />
 </head>
 <body>
-	<div id = "box" style = "background-image: url(../sources/images/banner.jpg); background-size: 100% 100%"></div>
+	<div id = "box" style = "background-image: url(../sources/images/banner.jpg);"></div>
 </body>
 </html>

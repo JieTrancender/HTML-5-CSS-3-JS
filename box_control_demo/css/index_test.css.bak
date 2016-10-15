@@ -31,8 +31,6 @@ body {
     border: solid 3px #FFF;
     box-align: center;
     -moz-box-align: center;
-    width: 400px;
-    height: 268px;
 }
 
 #box img {
