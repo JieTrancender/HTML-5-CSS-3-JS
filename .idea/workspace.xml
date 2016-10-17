@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db3f5d74-0bcc-4aa0-9d97-5279660ca16c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/box_control_demo/css/index_test.css" afterPath="$PROJECT_DIR$/box_control_demo/css/index_test.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/box_control_demo/html/index_test.html" afterPath="$PROJECT_DIR$/box_control_demo/html/index_test.html" />
-    </list>
+    <list default="true" id="db3f5d74-0bcc-4aa0-9d97-5279660ca16c" name="Default" comment="" />
     <list id="01567546-fa90-4069-a07e-ed48b8b1bebb" name="Failed commit: Default" comment="add box_control_test" />
     <ignored path="HTML-5-CSS-3-JS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -793,12 +789,12 @@
       <workItem from="1476381214684" duration="2065000" />
       <workItem from="1476422406829" duration="9918000" />
       <workItem from="1476462056266" duration="74000" />
-      <workItem from="1476520888274" duration="210000" />
+      <workItem from="1476520888274" duration="273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12971000" />
+    <option name="totallyTimeSpent" value="13034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="81" width="1272" height="969" extended-state="0" />
