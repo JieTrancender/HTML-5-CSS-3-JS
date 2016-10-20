@@ -1,0 +1,28 @@
+#container {
+	display: -moz-box;
+	display: -webkit-box;
+	width: 93.75%;
+}
+
+#left-sidebar {
+	width: 200px;
+	padding: 20px;
+	background-color: orange;
+}
+
+#contents {
+	width: 300px;
+	padding: 20px;
+	background-color: yellow;
+}
+
+#right-sidebar {
+	width: 200px;
+	padding: 20px;
+	background-color: limegreen;
+}
+
+#left-sidebar, #contents, #right-sidebar {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
