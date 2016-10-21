@@ -2,68 +2,267 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTML在线考试试题</title>
-  <link href = "../css/exam_web_page.css" rel = "stylesheet" />
+  <title>The file list of my computer</title>
+  <link href = "../css/my_computer.css" rel = "stylesheet" />
 </head>
 <body>
   <header id = "top_header">
-    <h1>HTML在线考试试题</h1>
-    <ul>
-      <li><p>学院: <strong>信息工程学院</strong></p></li>
-      <li><p>专业: <strong>软件工程</strong></p></li>
-      <li><p>班级: <strong>软件14-1班</strong></p></li>
-      <li><p>学号: <strong>1467159125</strong></p></li>
-      <li><p>姓名: <strong>莫杰</strong></p></li>
-    </ul>
+    <h1>The file lists of my computer</h1>
   </header>
-  <article>
-    <ol type = "1">
-      <li>
-        <h3>HTML中，换行使用的标签是( )。</h3>
-        <ol type = "A" class = "option_ol">
-          <li>&ltbr /&gt</li>
-          <li>&ltp&gt</li>
-          <li>&lthr /&gt</li>
-          <li>&ltimg /&gt</li>
-        </ol>
-      </li>
-      <li>
-        <h3>&ltimg /&gt标签的( )属性用于指定图像的地址。</h3>
-        <ul type = "A" class = "option_ol">
-          <li>alt</li>
-          <li>href</li>
-          <li>src</li>
-          <li>addr</li>
+  <article id = "container">
+    <aside>
+      <details OPEN = "true" style = "display: inline-block">
+        <summary>我的电脑</summary>
+          <ul type = "list-style-type: none" style = "list-style-type: none">
+          <li>
+            <details class = "first_level">
+              <summary>本地磁盘C</summary>
+              <ul style = "list-style-type: none">
+                <li>
+                  <details class = "second_level">
+                    <summary>我的文档</summary>
+                    <ul style = "list-style-type: none" class = "manage_href">
+                      <li><a href = "#read_me" title = "README.md">README.md</a></li>
+                      <li><a href = "../index.html" title = "index.html">index.html</a></li>
+                      <li><a href = "#welcome">welcome to github</a></li>
+                      <li><a href = "#designer">designer template</a></li>
+                      <li><a href = "#creating">create pages</a></li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>html</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "./exam_web_page.html" title = "exam_web_page.html">exam_web_page.html</a></li>
+                            <li><a href = "my_computer.html" title = "my_computer.html">my_computer.html</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>css</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "../css/exam_web_page.css">exam_web_page.css</a></li>
+                            <li><a href = "../css/my_computer.css">my_computer.css</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details class = "second_level">
+                    <summary>我的收藏</summary>
+                    <a href = "#">APUE</a>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class = "first_level">
+              <summary>本地磁盘D</summary>
+              <ul style = "list-style-type: none">
+                <li>
+                  <details class = "second_level">
+                    <summary>我的文档</summary>
+                    <ul style = "list-style-type: none" class = "manage_href">
+                      <li><a href = "#" title = "README.md">README.md</a></li>
+                      <li><a href = "#" title = "index.html">index.html</a></li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>html</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#" title = "exam_web_page.html">exam_web_page.html</a></li>
+                            <li><a href = "#" title = "my_computer.html">my_computer.html</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>css</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#">exam_web_page.css</a></li>
+                            <li><a href = "#">my_computer.css</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class = "first_level">
+              <summary>本地磁盘E</summary>
+              <ul style = "list-style-type: none">
+                <li>
+                  <details class = "second_level">
+                    <summary>我的文档</summary>
+                    <ul style = "list-style-type: none" class = "manage_href">
+                      <li><a href = "#" title = "README.md">README.md</a></li>
+                      <li><a href = "#" title = "index.html">index.html</a></li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>html</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#" title = "exam_web_page.html">exam_web_page.html</a></li>
+                            <li><a href = "#" title = "my_computer.html">my_computer.html</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>css</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#">exam_web_page.css</a></li>
+                            <li><a href = "#">my_computer.css</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class = "first_level">
+              <summary>本地磁盘F</summary>
+              <ul style = "list-style-type: none">
+                <li>
+                  <details class = "second_level">
+                    <summary>我的文档</summary>
+                    <ul style = "list-style-type: none" class = "manage_href">
+                      <li><a href = "#" title = "README.md">README.md</a></li>
+                      <li><a href = "#" title = "index.html">index.html</a></li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>html</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#" title = "exam_web_page.html">exam_web_page.html</a></li>
+                            <li><a href = "#" title = "my_computer.html">my_computer.html</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>css</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#">exam_web_page.css</a></li>
+                            <li><a href = "#">my_computer.css</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class = "first_level">
+              <summary>本地磁盘G</summary>
+              <ul style = "list-style-type: none">
+                <li>
+                  <details class = "second_level">
+                    <summary>我的文档</summary>
+                    <ul style = "list-style-type: none" class = "manage_href">
+                      <li><a href = "#" title = "README.md">README.md</a></li>
+                      <li><a href = "#" title = "index.html">index.html</a></li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>html</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#" title = "exam_web_page.html">exam_web_page.html</a></li>
+                            <li><a href = "#" title = "my_computer.html">my_computer.html</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li>
+                        <details class = "third_level">
+                          <summary>css</summary>
+                          <ul style = "list-style-type: none">
+                            <li><a href = "#">exam_web_page.css</a></li>
+                            <li><a href = "#">my_computer.css</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
-      </li>
-      <li>
-        <h3>创建一个超链接使用的是( )标签。</h3>
-        <ol type = 'A' class = "option_ol">
-          <li>&lta&gt</li>
-          <li>&ltol&gt</li>
-          <li>&ltimg /&gt</li>
-          <li>&lthr /&gt</li>
-        </ol>
-      </li>
-      <li class = "important-question">
-        <h3 class = "important-question">&ltimg /&gt标签的( )属性用来设置图片与旁边内容的水平距离。</h3>
-        <ol type = "A" class = "option_ol">
-          <li>hspace</li>
-          <li>vspace</li>
-          <li>border</li>
-          <li>alt</li>
-        </ol>
-      </li>
-      <li>
-        <h3>下面HTML结构中，不属于列表结构的是( )</h3>
-        <ol type = "A" class = "option_ol">
-          <li>ul-li</li>
-          <li>ol-li</li>
-          <li>dl-dt-dd</li>
-          <li>p-br</li>
-        </ol>
-      </li>
-    </ol>
-  </article>
+      </details>
+    </aside>
+    <article id = "contents">
+      <ol>
+        <li id = "welcome">
+          <section>
+            <h2>Welcome to Github Pages</h2>
+            <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects.
+              Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer,
+              and publish. After your page is generated, you can check out the new gh-pages branch locally. If you’
+              re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+          </section>
+        </li>
+
+        <li id = "designer">
+          <section>
+            <h2>Designer Templates</h2>
+            <p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse
+              through them. You can easily go back to edit your page before publishing. After publishing your page, you
+              can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+          </section>
+        </li>
+
+        <li id = "creating">
+          <section>
+            <h2>Creating pages manually</h2>
+            <p>If you prefer to not use the automatic generator, push a branch named gh-pages to your repository to create
+              a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog
+              aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to
+              copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <h2>Index.html</h2>
+            <a href = "../index.html" target = "_blank">html code</a>
+            <a href = "../css/index.css" target = "_blank">css code</a>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <h2>HTML Online Exam Questions</h2>
+            <a href = "./exam_web_page.html" target = "_blank">html code</a>
+            <a href = "../css/exam_web_page.css" target = "_blank">css code</a>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <h2>The File List Of My Computer</h2>
+            <a href = "./my_computer.html" target = "_blank">html code</a>
+            <a href = "../css/my_computer.css" target = "_blank">css code</a>
+          </section>
+        </li>
+
+        <li id = "read_me">
+          <section>
+            <h2>README.md</h2>
+            <p>@Author: <strong>JTrancender</strong></p>
+            <p>@Email: <strong>jie-email@jie-trancender.org</strong></p>
+            <p>@Github: <strong>JieTrancender</strong></p>
+            <p>@Content: <strong>有一种落差是，你配不上自己的野心，也辜负了所受的苦难。</strong></p>
+            <p>@Time: <strong>Oct 21st 2016</strong></p>
+          </section>
+        </li>
+      </ol>
+    </article>
+    </article>
 </body>
 </html>

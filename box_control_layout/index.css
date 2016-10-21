@@ -1,7 +1,13 @@
+header {
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	background-color: rebeccapurple;
+}
+
+
 #container {
 	display: -moz-box;
 	display: -webkit-box;
-	width: 93.75%;
 }
 
 #left-sidebar {
@@ -11,7 +17,8 @@
 }
 
 #contents {
-	width: 300px;
+    -moz-box-flex: 1;
+	-webkit-box-flex: 1;
 	padding: 20px;
 	background-color: yellow;
 }
