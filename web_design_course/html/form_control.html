@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8" />
+	<title>JieTrancender</title>
+</head>
+<body>
+	<header></header>
+	<nav></nav>
+	<section>
+		<form action = "login.html" method = "post">
+			<p>User&nbsp;Name:&nbsp;<input type = "text" id = "user_name"/></p>
+			<p>User&nbsp;Key:&nbsp; <input type = "password" id = "user_key"/></p>
+			<p>User Gender: <input type = "text" id = "user_gender"/></p>
+			<p>User Gender: <input type = "radio" name = "user_gender" id = "user_gender" value = "Girl" />Girl&nbsp;<input type = "radio" name = "user_gender" id = "user_gender" value = "Boy" />Boy</p>
+			<p>User Birth:
+				<!-- <input type = "text" id = "user_birth" size = "4" maxlength = "4" /> -->
+				<select id = "user_year">
+					<option></option>
+				</select>
+				<select id = "user_month">
+					<option value = "January">January</option>
+					<option value = "February">Februray</option>
+					<option value = "February">Februray</option>
+					<option value = "February">Februray</option>
+					<option value = "February">Februray</option>
+				</select>
+				<select id = "user_day">
+				</select>
+			</p>
+
+			<br /><input type = "submit" id = "user_submit" value = "Submit"/>
+			<input type = "reset" id = "user_reset" value = "Reset"/>
+			<input type = "button" id = "user_button" value = "Button"/>
+			<p>Hobbies: 
+				<input type = "checkbox" name = "hobby" id = "suer_hobby" checked = "checked" />Communication&nbsp;
+				<input type = "checkbox" name = "hobby" id = "user_hobby" />Exercises&nbsp;
+				<input type = "checkbox" name = "hobby" id = "user_hobby" />Coding
+			</p>
+			<p>Avatar:<div id = "user_avatar></div></p>
+		</form>
+	</section>
+	<footer></footer>
+</body>
