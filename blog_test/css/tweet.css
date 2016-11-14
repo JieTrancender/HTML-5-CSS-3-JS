@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    background-color: #e7e4db;
+    font-family: "宋体", serif;
+    font-size: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: #858585 1px solid;
+}
+
+header h1{
+}
+
+.top_h1 {
+    line-height: 80px;
+    font-size: 46px;
+    margin-left: 20%;
+}
+
+.top_small {
+    float: right;
+    margin-right: 2%;
+    margin-left: 20%;
+}
+
+.container {
+    min-width: 93.74%;
+    min-height: 90%;
+    /*border: solid 1px red;*/
+    /*margin: 60px 180px;*/
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.content_container {
+    /*margin: 60px 120px;*/
+    margin: 70px 10%;
+    border: solid 1px red;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+/*.main_aside {*/
+    /*-moz-box-flex: 2;*/
+    /*-webkit-box-flex: 2;*/
+    /*width: 20%;*/
+    /*!*min-height: 40px;*!*/
+    /*border: solid 1px #000;*/
+/*}*/
+
+.main_content {
+    /*-moz-box-flex: 8;*/
+    /*-webkit-box-flex: 8;*/
+    /*width: 80%;*/
+    /*height: 100%;*/
+    padding: 10px;
+    /*margin: 30px 60px 30px 60px;*/
+    margin: 20px 10%;
+    border: dashed 1px #000;
+}

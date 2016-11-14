@@ -1,0 +1,41 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e7e4db;
+}
+
+#login_div {
+    width: 334px;
+    height: 600px;
+    color: red;
+    background-color: #fff;
+}
+
+#quick_log, #account_password {
+    height: 50px;
+    font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+    border-bottom: 1px solid #c0cdd9;
+    background-color: #f9fbfe;
+    padding-left: 80px;
+    /*width: 100%;*/
+}
+
+#login_user, #login_pwd {
+    height: 40px;
+    width: 284px;
+    /*padding: 25px;*/
+    margin-left: 25px;
+}
+
+#login_pwd {
+    margin-top: 5px;
+}
+
+.login {
+    width: 334px;
+    background-color: #fff;
+}
+
