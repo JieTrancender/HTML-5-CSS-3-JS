@@ -1,0 +1,58 @@
+html, body {
+			padding: 0;
+			margin: 0;
+			font-family: "宋体", serif;
+			font-size: 18px;
+			width: 100%;
+			height: 100%;
+		}
+
+		section {
+			margin: 20px;
+		}
+
+		header {
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		#poem {
+			width: 350px;
+			height: 350px;
+			border: 1px solid gray;
+			background-color: #e7e4db;
+		}
+
+		#poem header {
+			margin-top: 20px;
+			margin: 20px 110px;
+		}
+
+		#poem section {
+			padding: 5px;
+		}
+
+		#poem p {
+			margin: 5px 0px;
+			font-size: 20px;
+		}
+
+		#description {
+			border: solid 0px gray;
+			padding: 20px;
+			background-color: #e7e4db;
+		}
+
+		#rank_list {
+			border: solid 1px gray;
+			padding: 20px;
+			background-color: #e7e4db;
+		}
+
+		#rank_list dt, #rank_list dd {
+			display: inline-block;
+		}
+
+		#rank_list dd {
+			margin: -8px;
+		}
