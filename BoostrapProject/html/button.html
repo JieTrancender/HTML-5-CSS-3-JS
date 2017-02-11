@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joason</title>
+	<link rel = "stylesheet" href = "../css/bootstrap.min.css"/>
+	<style>
+		a:focus {
+			outline: none;
+		}
+		#view {
+			width: 300px;
+			height: 100px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body style = "margin: 100px;">
+	<!-- <button class="btn btn-default" data-toggle = "button" autocomplete = "off">按钮</button> -->
+	
+	<!-- <div class = "btn-group" data-toggle = "buttons">
+		<label for="" class = "btn btn-primary active">
+			<input type="radio" name="sex" value="男" checked>男
+		</label>
+		<label for="" class = "btn btn-primary">
+			<input type="radio" name="sex" value="女">女
+		</label>
+	</div> -->
+
+	<!-- <div class="btn-group" data-toggle = "buttons">
+		<label for="" class = "btn btn-default">
+			<input type="checkbox" name = "hobby" value = "music" checked>音乐
+		</label>
+		<label for="" class = "btn btn-default">
+			<input type="checkbox" name = "hobby" value = "pe">体育
+		</label>
+		<label for="" class = "btn btn-default">
+			<input type="checkbox" name = "hobby" value = "game">游戏
+		</label>
+		<label for="" class = "btn btn-default">
+			<input type="checkbox" name = "hobby" value = "exercise">运动
+		</label>
+	</div> -->
+
+	<!-- <button class="btn btn-default" data-loading-text = "Loading..." autocomplete = "off">开始上传</button> -->
+
+	<button class="btn btn-default" autocomplete = "off">按钮</button>
+
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+
+	<script>
+		// $('button').on('click', function () {
+		// 	var btn = $(this).button('loading');
+		// 	setTimeout(function () {
+		// 		btn.button('reset');
+		// 	}, 1000);
+		// });
+
+		$('button').on('click', function () {
+			$(this).button('toggle');
+		});
+	</script>
+		
+</body>
+</html>

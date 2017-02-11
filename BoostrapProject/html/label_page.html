@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joason</title>
+	<link rel = "stylesheet" href = "../css/bootstrap.min.css"/>
+	<style>
+		a:focus {
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- <ul class="nav nav-pills">胶囊式</ul> -->
+	<!-- <ul class="nav nav-tabs">
+		<li class = "active" data-toggle = "tab"><a href="#html5">HTML5</a></li>
+		<li><a href="#bootstrap" data-toggle = "tab">Bootstrap</a></li>
+		<li><a href="#jquery" data-toggle = "tab">JQuery</a></li>
+		<li><a href="#extjs" data-toggle = "tab">ExtJS</a></li>
+	</ul> -->
+	<!-- js实现标签页 -->
+	<ul id = "nav" class="nav nav-tabs">
+		<li class = "active"><a href="#html5">HTML5</a></li>
+		<li><a href="#bootstrap">Bootstrap</a></li>
+		<li><a href="#jquery">JQuery</a></li>
+		<li><a href="#extjs">ExtJS</a></li>
+	</ul>
+	<div class = "tab-content" style = "padding: 10px;">
+		<div id = "html5" class = "tab-pane active fade in">标准通用标记语言下的一个应用HTML标准自1999年12月发布的HTML4.01后，后继的HTML5和其它标准被束之高阁，为了推动Web标准化运动，一些公司联合起来，成立了一个叫做 Web Hypertext Application Technology Working Group （Web超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web 表单和应用程序，而W3C（World Wide Web Consortium，万维网联盟） 专注于XHTML2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。</div>
+		<div id = "bootstrap" class = "tab-pane fade">Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。</div>
+		<div id = "jquery" class = "tab-pane fade">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</div>
+		<div id = "extjs" class = "tab-pane fade">自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能。</div>
+	</div>
+
+
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+
+	<script>
+	// <!-- js实现标签页 -->
+		$('#nav a').on('click', function(e) {
+			e.preventDefault();
+			$(this).tab('show');
+		})
+
+		$('#nav a').on('show.bs.tab', function() {
+			// alert('调用前触发。。。');
+		})
+	</script>
+</body>
+</html>

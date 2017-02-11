@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joason</title>
+	<link rel = "stylesheet" href = "../css/bootstrap.min.css"/>
+</head>
+<body>
+	<!-- <div class="dropdown">
+		<button class="btn btn-primary" data-toggle = "dropdown">
+			下拉菜单
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">资讯</a></li>
+			<li><a href="#">产品</a></li>
+			<li><a href="#">关于</a></li>
+		</ul>
+	</div> -->
+
+	<nav class="navbar navbar-default">
+		<a href="#" class="navbar-brand">Web开发</a>
+		<ul class="nav navbar-nav">
+			<li><a href="#html5">HTML5</a></li>
+			<li><a href="#bootstrap">Bootstrap</a></li>
+			<li class = "dropdown">
+				<a href="#" data-toggle = "dropdown">JavaScript <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#jquery">JQuery</a></li>
+					<li><a href="#yui">Yui</a></li>
+					<li><a href="#extjs">ExtJS</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div id = "content" style = "padding: 0 10px; height: 200px; overflow: auto; position: relative;" data-spy = "scroll" data-offset = "0">
+		<section class="sec">
+			<h4 id = "html5">HTML5 <a href="#" onclick = "removeSec(this)">Delete</a></h4>
+		<p>标准通用标记语言下的一个应用HTML标准自1999年12月发布的HTML4.01后，后继的HTML5和其它标准被束之高阁，为了推动Web标准化运动，一些公司联合起来，成立了一个叫做 Web Hypertext Application Technology Working Group （Web超文本应用技术工作组 -WHATWG） 的组织。WHATWG 致力于 Web 表单和应用程序，而W3C（World Wide Web Consortium，万维网联盟） 专注于XHTML2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML。</p>
+		</section>
+		<section class="sec">
+			<h4 id = "bootstrap">BootStrap</h4>
+		<p>Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。</p>
+		</section>
+		<section class="sec">
+			<h4 id = "jquery">JQuery</h4>
+		<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+		</section>
+		<section class="sec">
+			<h4 id = "yui">Yui</h4>
+		<p>YUI是Stardust Promotion所属的女歌手。日本才女歌手YUI，向来作风低调，凭有日版《新不了情》之称的《太阳之歌》火速成名。从小就梦想成为歌手，中学三年级的时候开始在笔记本上写诗。 进入高中，她决心成为歌手，并在街边演唱，当地的音乐学校听了LIFE的录音后，邀请她加入。 YUI选择离开高校，而去音乐学校学习吉他演奏和作曲 并且在2004年3月，YUI参加了Sony Music举办的SD选拔赛。在自家的蒲团上练习吉他，开始尝试作曲，处女作为「Why me」。2013年4月3日凌晨对外正式宣告结成的日本男女4人组乐队《FLOWER FLOWER》</p>
+		</section>
+		<section class="sec">
+			<h4 id = "extjs">ExtJs</h4>
+		<p>自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能。</p>
+		</section>
+		
+	</div>
+
+	<script>
+		function removeSec(e) {
+			$(e).parents('.sec').remove();
+			$('#content').scrollspy('refresh');
+		}
+	</script>
+
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+</body>
+</html>

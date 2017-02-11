@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joason</title>
+	<link rel = "stylesheet" href = "../css/bootstrap.min.css"/>
+	<style>
+		a:focus {
+			outline: none;
+		}
+		#view {
+			width: 300px;
+			height: 100px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body style = "margin: 100px;">
+	
+	<!-- <button class="btn btn-default" data-toggle = "collapse" data-target = "#content">Bootstrap</button>
+
+	<div class = "collapse" id = "content">
+		<div class = "well">Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。</div>
+	</div>
+ -->
+
+	<!-- <div id = "according" lass="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseOne" data-toggle = "collapse" data-parent = "#according">第一部分链接</a></h4>
+			</div>
+			<div id = "collapseOne" class="panel-collapse collapse in">
+				<div class="panel-body">
+					第1部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseTwo" data-toggle = "collapse" data-parent = "#according">第二部分链接</a></h4>
+			</div>
+			<div id = "collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					第2部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseThree" data-toggle = "collapse" data-parent = "#according">第三部分链接</a></h4>
+			</div>
+			<div id = "collapseThree" class="panel-collapse collapse">
+				<div class="panel-body">
+					第3部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseFour" data-toggle = "collapse" data-parent = "#according">第四部分链接</a></h4>
+			</div>
+			<div id = "collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					第4部分内容
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div id = "according" lass="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseOne" data-toggle = "collapse">第一部分链接</a></h4>
+			</div>
+			<div id = "collapseOne" class="panel-collapse collapse in">
+				<div class="panel-body">
+					第1部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseTwo" data-toggle = "collapse">第二部分链接</a></h4>
+			</div>
+			<div id = "collapseTwo" class="panel-collapse collapse">
+				<div class="panel-body">
+					第2部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseThree" data-toggle = "collapse">第三部分链接</a></h4>
+			</div>
+			<div id = "collapseThree" class="panel-collapse collapse">
+				<div class="panel-body">
+					第3部分内容
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title"><a href="#collapseFour" data-toggle = "collapse">第四部分链接</a></h4>
+			</div>
+			<div id = "collapseFour" class="panel-collapse collapse">
+				<div class="panel-body">
+					第4部分内容
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<button class="btn btn-default" data-target = "#content">Bootstrap</button>
+
+	<div class = "collapse" id = "content">
+		<div class = "well">Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。</div>
+	</div>
+
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+
+	<script>
+		// $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour').collapse({
+		// 	parent : '#according',
+		// 	toggle : false
+		// });
+
+	$('button').on('click', function () {
+		$('#content').collapse('toggle');
+	});
+
+	$('#content').on('show.bs.collapse', function () {
+		alert('....');
+	});
+
+	</script>
+		
+</body>
+</html>

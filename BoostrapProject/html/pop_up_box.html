@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Joason</title>
+	<link rel = "stylesheet" href = "../css/bootstrap.min.css"/>
+	<style>
+		a:focus {
+			outline: none;
+		}
+		#view {
+			width: 300px;
+			height: 100px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body style = "margin: 100px;">
+<div id="view">
+	<button id = "b" class="btn btn-danger btn-lg" data-placement = "right" data-toggle = "popover" title = "Bootstrap" data-content = "Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。" data>点击弹出/隐藏警告框</button>
+</div>
+
+	<button id="btn">按钮</button>
+
+	<script src = "../js/jquery.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+
+	<script>
+		$('#b').popover({
+			viewport : {
+				selector : '#view',
+				padding : 10,
+			}
+		});
+
+		$('#btn').on('click', function() {
+			$('#b').popover('toggle');
+		});
+
+		// $('#b').on('show.bs.popover', function() {
+		// 	alert('show');
+		// })
+	</script>
+</body>
+</html>
