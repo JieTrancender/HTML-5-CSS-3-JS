@@ -2,9 +2,10 @@
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5BBB\4F53", simsun, sans-serif;
+	color: #666;
 }
 
-.logo {
+a.logo {
 	padding: 0px;
 }
 #myCarousel {
@@ -57,7 +58,43 @@ body {
 	padding: 20px;
 }
 
-没有小于768px的原因是Bootstrap以移动端为优先设计
+.tab2 {
+	background-color: #eee;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.tab2 img {
+	width: 40%;
+	height: 40%;
+}
+
+.tab3 {
+	padding: 60px 0;
+	text-align: center;
+}
+
+.tab3 img {
+	width: 65%;
+	height: 65%;
+}
+
+.text h3 {
+	font-size: 20px;
+}
+
+.text p {
+	font-size: 14px;
+}
+
+#footer {
+	background-color: #eee;
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+}
+
+/*没有小于768px的原因是Bootstrap以移动端为优先设计*/
 
 /*小屏幕（平板，大于等于768px）*/
 @media (min-width: 768px) {
@@ -67,6 +104,22 @@ body {
 
 	.tab-p {
 		font-size: 16px;
+	}
+
+	.text h3 {
+		font-size: 22px;
+	}
+
+	.text p {
+		font-size: 15px;
+	}
+
+	.tab2-text {
+		float: left;
+	}
+
+	.tab2-img {
+		float: right;
 	}
 }
 
@@ -79,6 +132,14 @@ body {
 	.tab-p {
 		font-size: 17px;
 	}
+
+	.text h3 {
+		font-size: 24px;
+	}
+
+	.text p {
+		font-size: 16px;
+	}
 }
 
 /*大屏幕（大桌面显示器，大于等于1200px）*/
@@ -88,6 +149,14 @@ body {
 	}
 
 	.tab-p {
+		font-size: 18px;
+	}
+
+	.text h3 {
+		font-size: 26px;
+	}
+
+	.text p {
 		font-size: 18px;
 	}
 }
