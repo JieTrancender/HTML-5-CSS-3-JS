@@ -60,6 +60,15 @@
     2. 离开作用域的值将被自动标记为可以回收，因此将在垃圾收集期间被删除
     3. “标记清楚”是目前主流的垃圾收集算法，这种算法的思想是给当前不使用的值加上标记，然后再回收其内存
     4. 另一种垃圾收集算法是“引用计数”，这种算法的思想是跟踪记录所有值被引用的次数。js目前不是用这种算法
+
+            function problem() {
+              var objectA = new Object();
+              var objectB = new Object();
+
+              objectA.someOtherObject = objectB;
+              objectB.anotherObject = objectA;
+            }
+        
     5. 当代码中存在循环引用现象时，“引用计数”算法就会当值问题
     6. 解除变量的引用不仅有助于消除循环引用现象，而且对垃圾收集也有好处。为了确保有效地回收内存，应该及时解除不再使用的全局对象、全局对象属性以及循环引用变量的引用
 13. js没有块级作用域
@@ -96,9 +105,209 @@
         var result = addTest(10, 20);   //30
         alert(sum);   //30，当不用var声明的时候变量会添加到全局环境中去，所以一定避免不使用var的情况
 
-15. 
-    <table>
-      <tr>
-        <td>Poo</td>
-      </tr>
-    </table>
+### 第五章 引用类型
+
+1. Object类型
+
+        function displayInfo(args) {
+          var output =  "";
+          
+          if (typeof args.name == "string") {
+            output += "Name: " + args.name + "\n";
+           }
+          
+          if (typeof args.age == "number") {
+            output += "Age: " + args.age + "\n";
+          }
+          
+          alert(output);
+        }
+
+        displayInfo({
+          name : "Joason",
+          age : 20
+        });   //Name:Joason \n Age:20
+
+        displayInfo({
+          name : "MingEr"
+        });   //Name:MingEr
+
+2. Array类型（数据是有序序列，每一项可以保存任何类型的数据）
+
+        var colors = ["red", "blue", "green"];
+        alert(colors[2]);   //"green"
+
+        var colors = new Array("red", "blue", "green");
+        alert(colors.length);   //3
+
+3. Object类型和Array类型一样，在使用数组字面量表示法时，都不会调用对应的构造函数
+4. 所有对象都具有toLocaleString()、toString()、valueOf()方法。
+
+        var colors = new Array("red", "blue", "green");
+
+        alert(Array.isArray(colors));    //true
+        alert(colors.toLocaleString());   //”red,blue,green“
+        alert(colors.toString());   //"red,blue,green"
+        alert(colors.valueOf());    //"red,blue,green" //实质上是["red", "blue", "green"]即返回的是数组，通过多次调用toString()方法合成的
+        alert(colors);
+
+    1. 对象调用toLocaleString()方法时不总是与toString()和valueOf()方法结果一样，当对数组调用toLocaleString()方法时对每一项调用toLocaleString()方法
+
+            var person1 = {
+              toLocaleString : function() {
+                return "Joason";
+              },
+              
+              toString : function() {
+                return "JTrancender";
+              }
+            };
+
+            var person2 = {
+              toLocaleString : function() {
+                return "MingEr";
+              },
+              
+              toString : function() {
+                return "Ming";
+              }
+            };
+
+            var person = new Array(person1, person2);
+            alert(person);    //JTrancender,Ming
+            alert(person.toString());    //JTrancender,Ming
+            alert(person.valueOf());    //JTrancender,Ming
+            alert(person.toLocaleString());   //Joason,MingEr
+
+    2. 默认的toString()方法分隔符是逗号，当用join时可使用任何字符分割（不给任何值或者undefined就会以逗号作为分隔符）
+
+            var colors = new Array("red", "blue", "green");
+            alert(colors.join(","));    //"red,blue,green"
+            alert(colors.join("|"));    //"red|blue|green"
+
+    3. 栈方法
+
+            var colors = new Array();
+            var count = colors.push("red", "green");
+            alert(count);   //2
+
+            count = colors.push("black");
+            alert(count);   //3
+
+            var item = colors.pop();
+            alert(item);    //"black"
+            alert(colors.length);   //2
+
+    4. 如果数组中的某一项的值是null或者undefined，那么该值在join()、toLocaleString()、toString()和valueOf()方法返回的结果中以空字符表示
+
+            var colors = ["red", "green"];
+            colors.push(null);
+            colors.push(undefined);
+
+            alert(colors);    //red,green,,
+
+    5. 队列方法（通过push尾部添加数据和shift获取第一项，也可以通过unshift在前段添加数据并使用pop获取最后一项实现队列方法）
+
+            var colors = new Array();
+            var count = colors.push("red", "green");
+            alert(count);   //2
+
+            count = colors.push("black");
+            alert(count);   //3
+
+            var item = colors.shift();
+            alert(item);    //"red"
+            alert(colors.length);   //2
+
+            var colors = new Array();
+            var count = colors.unshift("red", "green");
+            alert(count);   //2
+
+            count = colors.unshift("black");
+            alert(count);   //3
+
+            var item = colors.pop();
+            alert(item);    //"green"
+            alert(colors.length);   //2
+
+
+    6. 重排序方法（数组中存在reverse()和sort()方法对数组进行排序，reverse是反转数组项的顺序，sort是对每一项调用toString方法然后比较字符串结果）
+
+            var values = [0, 1, 5, 10, 15];
+            values.reverse();
+            alert(values);    //15,10,5,1,0
+
+            var values = [0, 1, 5, 10, 15];
+            values.sort();
+            alert(values);    //0,1,10,15,5
+
+        > <small>默认的sort方法通常不是最佳方案，因此可以自定义排序准则</small>
+
+            function compare(value1, value2) {
+              if (value1 < value2) {
+                return -1;
+              } else if (value1 > value2) {
+                return 1;
+              } else {
+                return 0;
+              }
+            }
+
+            var values = [0, 1, 15, 10, 5];
+            values.sort(compare);
+            alert(values);    //0,1,5,10,15
+
+        >  <strong>reverse()和sort()方法的返回值是经过排序之后的数组</strong>
+        >  对于数值类型或者其valueOf方法会返回数值类型的对象类型，可以使用一个更简单的比较函数
+
+            function compare(value1, value2) {
+              return value2 - value1;
+            }
+
+    7. concat操作方法 
+
+        > 该方法可以基于当前数组中的所有项创建一个新数组，这个方法先创建当前数组的一个副本，然后将接收到的参数添加到这个副本的末尾，最后返回新构建的数组
+        > 如果传递给concat方法的是一个或者多个数组，则该方法会将这些数组中的每一项添加到结果数组中去
+        > 如果传递的值不是数组，这些值就会被简单地添加到结果数组的末尾
+        
+            var colors = ["red", "green", "blue"];
+            var colors2 = colors.concat("yellow", ["black", "brown"]);
+
+            alert(colors);    //red,green,blue
+            alert(colors2);   //red,green,blue,yellow,black,brown
+
+    8. slice操作方法
+
+        > 基于当前数组创建一个新数组，可以接受一个或者两个参数用来表明起始和结束位置
+        
+            var colors = ["red", "green", "blue", "yellow", "purple"];
+            var colors2 = colors.slice(1);
+            var colors3 = colors.slice(1, 4);
+
+            alert(colors2);   //{"green","blue","yellow","purple"}
+            alert(colors3);   //{"green","blue","yellow"}
+
+    9. splice操作方法
+
+        > 1. 删除：splice(0, 2)会删除数组中的前两项
+        > 2. 插入：splice(起始位置，0(要删除的项数)，...(要插入的项))
+        > 3. 替换：splice(起始位置，要删除的项数，要插入的任意数量的项)
+        > 4. splice方法始终都会返回一个数组
+          
+            var colors = ["red", "green", "blue"];
+            var removed = colors.splice(0, 1);
+            alert(colors);    //red,green,blue
+            alert(removed);   //green, blue
+
+            removed = colors.splice(1, 0, "yellow", "orange");
+            alert(colors);    //red,green,blue
+            alert(removed);   //red,yellow,orange,green,blue
+
+            removed = colors.splice(1, 1, "red", "purple");
+            alert(colors);    //red,green,blue
+            alert(removed);   //red,red,purple,blue
+
+
+
+
+  
