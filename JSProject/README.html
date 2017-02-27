@@ -1355,7 +1355,112 @@ alert(removed);   //""
 removed = colors.splice(1, 1, "red", "purple");
 alert(colors);    //{"green","red","purple","orange","blue"}
 alert(removed);   //{"yellow"}
+10. indexOf和lastIndexOf操作方法
 </code></pre>
+<blockquote>
+<p>两个方法都接受两个参数（要查找的项和表示查找起点位置的索引&lt;可选项&gt;)</p>
+</blockquote>
+<pre><code>var numbers = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+alert(numbers.indexOf(4));    //3
+alert(numbers.lastIndexOf(4));    //5
+
+alert(numbers.indexOf(4, 4));   //5
+alert(numbers.lastIndexOf(4, 4));   //3
+alert(numbers.indexOf(0));      //-1
+alert(numbers.lastIndexOf(0));    //-1
+</code></pre>
+</li>
+<li>
+<p>迭代方法</p>
+<blockquote>
+<p>every(): 对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true</p>
+</blockquote>
+<pre><code>var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+var everyResult = numbers.every(function(item, index, array){
+  return item &gt; 2;
+});
+
+alert(everyResult);   //false
+</code></pre>
+<blockquote>
+<p>some(): 对数组中的每一项运行函数，如果有一个返回true，则返回true</p>
+</blockquote>
+<pre><code>var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+var someyResult = numbers.some(function(item, index, array){
+  return item &gt; 2;
+});
+
+alert(someResult);    //true
+</code></pre>
+<blockquote>
+<p>filter(): 对数组中的每一项运行给定函数，返回该函数会返回true的项组成的数组</p>
+</blockquote>
+<pre><code>var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+var filterResult = numbers.filter(function(item, index, array){
+  return item &gt; 2;
+});
+
+alert(filterResult);    //[3, 4, 5, 4, 3]
+</code></pre>
+<blockquote>
+<p>map(): 也返回一个数组，数组的每一项都是在原始数组中的对应项上运行函数的结果</p>
+</blockquote>
+<pre><code>var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+var mapResult = numbers.map(function(item, index, array){
+  return item * 2;
+});
+
+alert(mapResult);   //2, 4, 6, 8, 10, 8, 6, 2
+</code></pre>
+<blockquote>
+<p>forEach(): 对数组中的每一项运行给定函数，这个方法没有返回值</p>
+</blockquote>
+<pre><code>var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+var forEachResult = numbers.forEach(function(item, index, array){
+  array[index] += 1;
+});
+
+alert(numbers);   //[2, 3, 4, 5, 6, 5, 4, 3, 2]
+</code></pre>
+</li>
+<li>
+<p>缩小方法</p>
+<blockquote>
+<p><code>reduce()</code>和<code>reduceRight()</code>方法都会迭代所有项，然后构建一个最终返回值<br />
+<code>reduce()</code>方法从数组的第一项开始，逐个遍历到最后<br />
+<code>reduceRight()</code>方法从数组的最后一项开始，向前遍历到第一项<br />
+两个方法都接受两个参数：一个在每一项上调用的函数和&lt;可选的&gt;作为缩小基础的初始值<br />
+给定函数接受四个参数：前一个值、当前值、项的索引、数组对象</p>
+</blockquote>
+<pre><code>var values = [1, 2, 3, 4, 5];
+var sum = values.reduce(function(prev, cur, index, array){
+  return prev + cur;
+});
+
+alert(sum);    //15
+
+var sum = values.reduceRight(function(prev, cur, index, array){
+  return prev + cur;
+});
+
+alert(sum);   //15
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Date类型</p>
+<ol>
+<li>
+<p>日期格式化方法</p>
+<blockquote>
+<p><code>toDateString()</code>以特定于实现的格式显示星期几、月、日和年<br />
+<code>toTimeString()</code>以特定于实现的格式显示时、分、秒和地区<br />
+<code>toLocaleDateString</code>以特定于地区的格式显示星期几、月、日和年<br />
+<code>toLocaleTimeString</code>以特定于实现的格式显示时、分、秒<br />
+<code>toUTCString</code>以特定于实现的格式完整的UTC日期<br />
+与<code>toLocaleString</code>和<code>toString</code>方法一样，以上这些字符串格式 方法的输出也是因浏览器而异的</p>
+</blockquote>
 </li>
 </ol>
 </li>

@@ -306,8 +306,97 @@
             removed = colors.splice(1, 1, "red", "purple");
             alert(colors);    //{"green","red","purple","orange","blue"}
             alert(removed);   //{"yellow"}
+    10. indexOf和lastIndexOf操作方法
 
+        > 两个方法都接受两个参数（要查找的项和表示查找起点位置的索引<可选项>)
+        
+            var numbers = {1, 2, 3, 4, 5, 4, 3, 2, 1};
+            alert(numbers.indexOf(4));    //3
+            alert(numbers.lastIndexOf(4));    //5
 
+            alert(numbers.indexOf(4, 4));   //5
+            alert(numbers.lastIndexOf(4, 4));   //3
+            alert(numbers.indexOf(0));      //-1
+            alert(numbers.lastIndexOf(0));    //-1
+
+    11. 迭代方法
+
+        > every(): 对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true
+            
+            var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+            var everyResult = numbers.every(function(item, index, array){
+              return item > 2;
+            });
+
+            alert(everyResult);   //false
+
+        > some(): 对数组中的每一项运行函数，如果有一个返回true，则返回true
+            
+            var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+            var someyResult = numbers.some(function(item, index, array){
+              return item > 2;
+            });
+
+            alert(someResult);    //true
+
+        > filter(): 对数组中的每一项运行给定函数，返回该函数会返回true的项组成的数组
+        
+            var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+            var filterResult = numbers.filter(function(item, index, array){
+              return item > 2;
+            });
+
+            alert(filterResult);    //[3, 4, 5, 4, 3]
+
+        > map(): 也返回一个数组，数组的每一项都是在原始数组中的对应项上运行函数的结果
+        
+            var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+            var mapResult = numbers.map(function(item, index, array){
+              return item * 2;
+            });
+
+            alert(mapResult);   //2, 4, 6, 8, 10, 8, 6, 2
+
+        > forEach(): 对数组中的每一项运行给定函数，这个方法没有返回值
+        
+            var numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+            var forEachResult = numbers.forEach(function(item, index, array){
+              array[index] += 1;
+            });
+
+            alert(numbers);   //[2, 3, 4, 5, 6, 5, 4, 3, 2]
+
+    12. 缩小方法
+
+        > `reduce()`和`reduceRight()`方法都会迭代所有项，然后构建一个最终返回值
+        > `reduce()`方法从数组的第一项开始，逐个遍历到最后
+        > `reduceRight()`方法从数组的最后一项开始，向前遍历到第一项
+        > 两个方法都接受两个参数：一个在每一项上调用的函数和<可选的>作为缩小基础的初始值
+        > 给定函数接受四个参数：前一个值、当前值、项的索引、数组对象
+        
+            var values = [1, 2, 3, 4, 5];
+            var sum = values.reduce(function(prev, cur, index, array){
+              return prev + cur;
+            });
+
+            alert(sum);    //15
+
+            var sum = values.reduceRight(function(prev, cur, index, array){
+              return prev + cur;
+            });
+
+            alert(sum);   //15
+
+5. Date类型
+    1. 日期格式化方法
+
+        > `toDateString()`以特定于实现的格式显示星期几、月、日和年
+        > `toTimeString()`以特定于实现的格式显示时、分、秒和地区
+        > `toLocaleDateString`以特定于地区的格式显示星期几、月、日和年
+        > `toLocaleTimeString`以特定于实现的格式显示时、分、秒
+        > `toUTCString`以特定于实现的格式完整的UTC日期
+        > 与`toLocaleString`和`toString`方法一样，以上这些字符串格式 方法的输出也是因浏览器而异的
+    
 
 
   
