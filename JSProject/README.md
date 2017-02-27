@@ -292,20 +292,20 @@
         > 1. 删除：splice(0, 2)会删除数组中的前两项
         > 2. 插入：splice(起始位置，0(要删除的项数)，...(要插入的项))
         > 3. 替换：splice(起始位置，要删除的项数，要插入的任意数量的项)
-        > 4. splice方法始终都会返回一个数组
+        > 4. splice方法始终都会返回一个数组，返回的是删除项数组成的数组
           
             var colors = ["red", "green", "blue"];
             var removed = colors.splice(0, 1);
-            alert(colors);    //red,green,blue
-            alert(removed);   //green, blue
+            alert(colors);    //{"green","blue"}
+            alert(removed);   //{"red"}
 
             removed = colors.splice(1, 0, "yellow", "orange");
-            alert(colors);    //red,green,blue
-            alert(removed);   //red,yellow,orange,green,blue
+            alert(colors);    //{"green","yellow","orange","blue"}
+            alert(removed);   //""
 
             removed = colors.splice(1, 1, "red", "purple");
-            alert(colors);    //red,green,blue
-            alert(removed);   //red,red,purple,blue
+            alert(colors);    //{"green","red","purple","orange","blue"}
+            alert(removed);   //{"yellow"}
 
 
 
