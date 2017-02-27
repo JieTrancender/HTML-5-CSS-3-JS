@@ -397,6 +397,7 @@
         > `toUTCString`以特定于实现的格式完整的UTC日期
         > 与`toLocaleString`和`toString`方法一样，以上这些字符串格式 方法的输出也是因浏览器而异的
     
+6. 面向对象的程序设计
 
 
   
