@@ -19,7 +19,7 @@ Object.defineProperty(person, "name", {
 	value: "Jason"
 });
 
-alert(person.value);
+alert(person.name);
 person.name = "MingEr";
 alert(person.name);
 
@@ -35,7 +35,7 @@ Object.defineProperty(book, "year", {
 		return this._year;
 	},
 	set: function(newValue) {
-		if (newValue > 2004) {
+		if (newValue > this._year) {
 			this.version += newValue - this._year;
 			this._year = newValue;
 		}
@@ -46,15 +46,17 @@ book.year = 2005;
 alert(book.version);
 
 //定义多个属性
-var book = new Object();
+var book = {};
 
-Object.defineProperties(book {
+Object.defineProperties(book, {
 	_year: {
-		value: 2004
+		value: 2004,
+		writable: true
 	},
 
 	version: {
-		value: 1
+		value: 1,
+		writable: true
 	},
 
 	year: {
