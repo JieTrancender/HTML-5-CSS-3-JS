@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*CSS Document*/
+/*全局控制*/
+body{margin:0; padding:0; font-family:"宋体"; font-size:12px; color:#666;}
+
+/*重置浏览器默认样式*/
+h1,h2,p,ul,li,a,img,div{margin:0; padding:0; list-style:none; border:0;}
+
+/*公共样式*/
+a:link, a:visited{color:#666; text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/*top*/
+#top{height:80px; text-align:center; margin:40px 0; padding-bottom:20px; border-bottom:1px solid gray;}
+
+#top ul{margin:0 auto;}
+
+#top ul li{float:left;}
+
+
+
+
+
+
+
+
+
+
+#welcome{height:80%; text-align:center;}
