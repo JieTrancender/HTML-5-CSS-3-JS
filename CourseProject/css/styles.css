@@ -2,29 +2,48 @@
 
 /*CSS Document*/
 /*全局控制*/
-body{margin:0; padding:0; font-family:"宋体"; font-size:12px; color:#666;}
+body{margin:0; padding:0; font-family:"宋体"; font-size:12px; background:url(../images/top_bg.jpg) repeat-x; color:#666;}
 
 /*重置浏览器默认样式*/
-h1,h2,p,ul,li,a,img,div{margin:0; padding:0; list-style:none; border:0;}
+h1,h2,p,ul,li,a,img,div,dl,dt,dd{margin:0; padding:0; list-style:none; border:0;}
 
 /*公共样式*/
 a:link, a:visited{color:#666; text-decoration:none;}
 a:hover{text-decoration:underline;}
 
-/*top*/
-#top{height:80px; text-align:center; margin:40px 0; padding-bottom:20px; border-bottom:1px solid gray;}
+/*header*/
+#header{width:980px; height:60px; margin:0 auto;}
 
-#top ul{margin:0 auto;}
+h1{float:left; height:60px;}
 
-#top ul li{float:left;}
+.topNav{width:428px; height:39px; float:right; padding-top:21px;}
 
+.topNav p{display:inline-block;}
 
+.topNav span{padding-left:8px;}
 
+.search{width:170px; hegiht:39px; background-color:pink; float:right;}
 
+/*mainNav*/
+#mainNav{width:980px; height:48px; margin:0 auto;}
 
+#mainNav ul{padding-top:18px;}
 
+#mainNav ul li{float:left; padding: 0 20px 0 20px;}
 
+/*banner*/
+#banner{height:396px; width:100%; background-color: black;}
 
+.banner{height:100%; width:980px; margin:0 auto;}
 
+/*news*/
+#news{width:100%; height:40px; background:url(../images/news_bg.jpg) repeat-x left bottom;}
 
-#welcome{height:80%; text-align:center;}
+.news{height:22px; width:980px; margin:0 auto; padding-top:10px; /*background: gold;*/}
+
+/*#content*/
+#content{width:100%; height:400px; margin:0 auto; background-color:#dcdcdc;}
+.content{width:980px; hegith:400px; margin:0 auto; background: gold;}
+.panel{width:316px; height:136px; background:gray; float:left;}
+.panel dt{width:206px; height:136; float:left;}
+.panel dd{width:110px; height:136px; float:right;}

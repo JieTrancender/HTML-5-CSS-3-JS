@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*全局控制*/
+body{margin:0; padding:0; font-size:12px; font-family:"宋体"; color:#3e3e3e;}
+
+/*重置浏览器默认样式*/
+h1,h2,h3,h4,h5,a,p,ul,li,dl,dt,dd,img,input,button{margin:0; padding:0; list-style:none; border:0; outline:none;}
+
+/*公共样式*/
+a:link,a:visited{color:#3e3e3e; text-decoration:none;}
+a:hover{color:#f60; text-decoration:underline;}
+
+/*site-nav*/
+#site-nav{width:100%; height:26px; background:#f5f5f5; border-bottom:1px solid #dcdcdc;}
+.site-nav-body{width:1000px; height:26px; margin:0 auto; line-height:26px;/* background:pink;*/}
+.site-nav-mobile{width:45px; height:26px; float:left; background:url(../images/mobile.gif) no-repeat left center; padding-left:18px;}
+.site-nav-mobile a{background:url(../images/site-nav-bg.png) no-repeat right 1px; padding-right:9px;}
+.login-info{float:left; padding-left:10px;}
+.quick-menu{width:592px; height:26px; float:right;}
+.quick-menu li{float:left; background:url(../images/site-nav-bg.png) no-repeat right 7px; padding: 0 11px 0 5px;}
+.quick-menu .no-bg{background:none;}
+.quick-menu a{background:url(../images/arrow.gif) no-repeat right center; padding-right:10px;}
+.quick-menu .no-arrow{background:none; padding-right:0;}
+.quick-menu strong{color:#ff5500; padding:0 4px;}
+.quick-menu span{background:url(../images/gw.png) no-repeat left 5px; width:14px; height:26px; float:left; margin-right:5px;}
+
+/*#top-wrap*/
+#top-wrap{width:1000px; height:106px; margin:0 auto;}
+h1{width:294px; height:65px; padding-top:41px; float:left;}
+.search-wrap{width:660px; height: 90px; float:right; padding-top:16px;}
+.search-header{height:23px; line-height:23px;}
+.search-header li{float:left; margin-right:16px;}
+.search-current{background:url(../images/search-bg1.jpg) no-repeat;width:56px; height:23px; text-align:center; font-weight:bold}
+.search-header .search-current a{color:#fff;}
+.search-header .search-current a:hover{text-decoration:none;}
+.search-header li span{color:#d84600;}
+.search-body{height:34px;}
+.search-body span{float:left; width:7px; height:34px; background:url(../images/search-bg2.jpg) no-repeat;}
+.search-field{width:464px; height:28px; border:3px solid #f27b04; float:left; border-left:none;}
+.search-btn{width:130px; height:34px; background:url(../images/search-bg4.jpg) no-repeat; float:left;}
+.search-tips{width:48px; height:34px; float:left; padding-left:8px;}
+.search-bottom{height:33px;}
+.search-bottom li{float:left; line-height:33px; margin-right:9px;}
