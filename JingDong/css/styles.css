@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*全局控制*/
+body{margin:0; padding:0; font-size:12px; font-family:"宋体"; color:#666;}
+
+/*重置浏览器默认样式*/
+*{margin:0; padding:0; list-style:none; border:0; outline:none;}
+
+/*公共样式*/
+/*a:link, a:visited{text-decoration:none; color:#999;}*/
+a{text-decoration:none; color:#999;}
+a:hover{color:#f10215; text-decoration:none;}
+.container{width:1190px; margin:0 auto;}
+.icon{width:14px; height:16px;}
+.arrow-down{padding-right:13px; background:url(../images/arrow-down.png) no-repeat right center;}
+.style-red{color:#c81623;}
+
+
+
+/*header*/
+header#shortcut{width:100%; height:110px; background:url(../images/topBg.jpg) repeat-x; color:#999;}
+#topAd{width:1190px; height:80px; margin:0 auto;}
+#menu{margin-left:200px; width:990px; height:30px;}
+#menu-left{width:58px; height:31px; float:left/* background-color:gold;*/}
+#menu-left img{padding-top:7px; margin-bottom:-4px;}
+#menu-left span{line-height:17px;}
+#menu-right{width:705px; height:30px; float:right;}
+#menu-right li{display:inline-block; padding-right:13px; margin-left:13px; background:url(../images/li-bg.png) no-repeat right center; 
+	margin-top:6.5px;}
+#menu-right li:last-child{background:none; padding-right:0;}
+#menu-right li a{line-height:17px;}
+/*#menu-right li a{background:url(../images/arrow-down.png) no-repeat right center; padding-right:13px;}*/
+
+#logo{width:190px; height:170px; background-color:#fff; margin-top:-30px; box-shadow:0 -12px 10px rgba(0,0,0,.2);}
+#logo h1 a{display:block; width:190px; height:170px; background-image:url(../images/logo.v2.png);}
+#logo, #search{display:inline-block;}
+
+/*#menu-left img, #menu-left span{display:inline-block;}*/
+/*#menu-left img{padding-top:7px;}
+#menu-left span{background-color:green;line-height:21px;}*/
+/*#menu-left{width:58px; height:30px;display:-moz-box; display:-webkit-box; -moz-box-pack:center; -webkit-box-pack:center;
+	-moz-box-align:center; -webkit-box-align:center;}*/
+/*#menu-left img{margin-right:3px; padding-top:2px;}*/
+
+/*#menu-left{margin}*/
+/*#menu-left img{width:15px; height:23px;}*/
