@@ -42,3 +42,38 @@ h1{width:294px; height:65px; padding-top:41px; float:left;}
 .search-tips{width:48px; height:34px; float:left; padding-left:8px;}
 .search-bottom{height:33px;}
 .search-bottom li{float:left; line-height:33px; margin-right:9px;}
+.label-current{color:red;}
+
+/*#layout-two*/
+#layout-two{width:1000px; overflow:hidden; margin:0 auto; border-bottom:2px solid #f27b03; font-size:14px; font-weight:bold;}
+.layout-two-l{width:709px; overflow:hidden; float:left; padding-top:17px; line-height:23px; padding-left:7px;}
+.layout-two-l span{float:left; width:58px; height:23px; border:1px solid #d74700; border-bottom:0; background:#f37c06; text-align:center; 
+	color:#fff; margin-right:17px;}
+.layout-two-l a{float:left; color:#db4701; padding:0 18px; border:1px solid white; border-bottom:0;}
+.layout-two-l a:hover{text-decoration:none; background:#fff8ed; border:1px solid #f37c06; border-bottom:0;}
+/*.layout-two-r{width:238px; overflow:hidden; float:right;}*/
+.layout-two-r{width:246px; overflow:hidden; float:right;}
+.layout-two-r a{float:left; font-size:12px; color:#db4701;}
+.layout-two-r .txt{padding:22px 12px 0 10px;}
+
+/*#layout-three*/
+#layout-three{width:1000px; height:410px; margin:0 auto; overflow:hidden;}
+.layout-three-l{width:198px; height:410px; float:left; background:url(../images/shadow.jpg) no-repeat right 187px;}
+.product-list-content{width:178px; height:400px; background:#fff8ed; border:2px solid #f90; border-top:0; padding:0 5px;}
+.product-list-content h2{height:35px; line-height:35px; font-size:14px; border-bottom:1px solid #fcdfbe; padding-left:3px;}
+.product-list-content h2 a{font-size:12px; font-weight:normal; float:right; background:url(../images/arrow1.gif) no-repeat right center; 
+	padding-right:6px;}
+.product-list-content h3{height:28px; line-height:28px; font-size:12px; background:url(../images/icon.png) no-repeat 6px 3px; 
+	padding-left:28px;}
+.product-list-content .box{line-height:20px; padding:0 0 9px 8px; border-bottom:1px solid #fcdfbe;}
+.product-list-content .box a{display:inline-block;}
+.product-list-content .last{border-bottom:0;}
+.product-list-content .bg-control-1{background-position:6px -28px;}
+.product-list-content .bg-control-2{background-position:6px -57px;}
+.product-list-content .bg-control-3{background-position:6px -87px;}
+.product-list-content .bg-control-4{background-position:6px -117px;}
+
+
+.layout-three-r{width:802px; height:410px; float:left; background:#9ff;}
+/*238-70 = 168-87 = 81*/
+/*180 + 140 = 320  80 - 44 = 36 - 36 = 10px*/
