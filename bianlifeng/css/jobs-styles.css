@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*css document*/
+
+/*初始化标签防止不支持html5*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+
+/*全局控制*/
+body{margin:0; padding:0; font-size:14px; font-family:"宋体"; line-height:1.5; background:#f6f6f6;}
+
+/*重置浏览器默认样式*/
+*{margin:0; padding:0; border:0; list-style:none; outline:normal; border:0; vertical-align:baseline;}
+
+/*公共样式*/
+a{color:#938e8e; text-decoration:none; cursor:pointer;}
+
+#wrapper{margin:auto; min-width:1200px; background-color:#f6f6f6;}
+.header{background-color:#ff5200; height:95px;}
+.header .head_wrapper{position:fixed; width:100%; z-index:10000; background-color:#ff5200; margin:auto;}
+.header .inner{max-width:1000px; width:100%; margin:auto; height:95px;}
+.header .inner .logo{float:left; height:69px; margin-top:20px;}
+.header .inner .navs{float:right; margin:35px 10px 0 0; list-style-type:none; font-size:15px;}
+.header .inner .navs li{margin:5px 20px; display:inline-block;}
+.header .inner .navs li:last-child{margin-right:0;}
+.header .inner .navs li a{color:#f6b3a0; text-decoration:none;}
+.header .inner .navs .active a,
+.header .inner .navs li a:hover{color:#fff;}
+
+.content{background-color:#f6f6f6;}
+.content .inner{margin:30px auto; width:1000px;}
+.content .inner .departs{width:149px; display:inline-block; background-color:#fff;}
+.content .inner .jobs{width:840px; display:inline-block; background-color:#fff;}
+.departs{vertical-align:top; border:1px solid #efefef; border-radius:10px; overflow:hidden;}
+.departs ul{font-size:16px; line-height:50px; text-align:center; color:#353535; font-weight:300;}
+.departs ul li{border-bottom:1px solid #efefef; cursor:pointer;}
+.departs ul li:hover{background-color:#fafafa;}
+.departs ul li a{color:#353535;}
+.departs ul li:last-child{border-bottom:none;}
+.departs ul li.active a{color:#ff5200;}
+
+.jobs{vertical-align:top; border:1px solid #efefef; border-radius:10px; overflow:hidden;}
+.jobs .info{border-bottom:1px solid #efefef; background:#fafafa; padding:13px 89px; font-size:16px; color:#424242;}
+.jobs .info a{color:#ff5201;}
+.jobs .list{display:none;}
+.jobs #job-contents .active{display:block;}
+.list .detail{margin:40px 89px;}
+.list .detail h3{font-size:20x; font-weight:300; color:#ff5200;}
+.list .detail h4{padding-top:20px; font-size:20px; font-weight:300; line-height:100%; color:#26282f;}
+.list .detail p{margin-top:14px; font-size:14px; font-weight:200; line-height:160%; color:#838383;}
+
+.footer{text-align:center; background-color:#f9fafb; padding:15px 200px; color:#383a44;}
+.footer .footer_wrapper{width:1000px; margin:auto;}
+.footer .item{width:33.33%; float:left; margin:44px 0;}
+.footer .item .footer-title{margin-bottom:20px; font-size:14px;}
+.footer .item .text{margin:10px 0; font-size:14px; font-weight:200;}
+.footer .item-left{text-align:left;}
+.footer .item-right{text-align:right;}
+.footer .register{background-color:#f9fafb; border-top:1px solid #ddd; margin-bottom:43px; font-size:12px;}
+.footer .register .company{margin:40px 0 10px;}
+.footer .register .num img{vertical-align:bottom;}

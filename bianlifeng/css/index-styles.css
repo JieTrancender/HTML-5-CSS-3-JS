@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*css document*/
+
+/*初始化标签防止不支持html5*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+
+/*全局控制*/
+body{margin:0; padding:0; font-size:14px; font-family:"宋体"; line-height:1.5;}
+
+/*重置浏览器默认样式*/
+*{margin:0; padding:0; border:0; list-style:none; outline:normal; border:0; vertical-align:baseline;}
+
+/*公共样式*/
+a{color:#938e8e; text-decoration:none; cursor:pointer;}
+.clear{clear:both;}
+.page_width{width:1000px; margin:auto;}
+.text-right{text-align:right;}
+.gray{color:#938e8e;}
+
+
+#wrapper{margin:auto; min-width:1200px; background-color:#f6f6f6;}
+.header{background-color:#ff5200; height:95px;}
+/*.header .head_index_wrapper{position:fixed; width:100%; z-index:10000; background-color:#ff5200; margin:auto;}*/
+.header .inner{max-width:1000px; width:100%; margin:auto; height:95px;}
+.header .inner .logo{float:left; height:69px; margin-top:20px;}
+.header .inner .navs{float:right; margin:35px 10px 0 0; list-style-type:none; font-size:15px;}
+.header .inner .navs li{margin:5px 20px; display:inline-block;}
+.header .inner .navs li:last-child{margin-right:0;}
+.header .inner .navs li a{color:#f6b3a0; text-decoration:none;}
+.header .inner .navs .active a, .header .inner .navs li a:hover{color:#fff;}
+.header{height:535px; background: #fa6f2c url(../images/header-bg.jpg) no-repeat 50%;}
+.header .outer{width:1000px; margin:auto;}
+.header .outer .iphone{float:left; width:672px;}
+.header .outer .iphone img{float:right; width:100%; margin-top:50px;}
+.header .outer .text{float:left; position:relative; text-align:right; color:#fff; width:328px; margin-top:30px;}
+.header .outer .text img{left:-180px; position:absolute;}
+.header .outer .text .download{margin-top:90px; font-size:20px; margin-right:10px;}
+.header .outer .text .qr-code img{margin-top:7px; width:214px; position:relative; left:0;}
+.header .outer .text .btn-wrapper{position:relative; right:-55px;}
+.header .outer .text .btn-wrapper a,
+.header .outer .text .btn-wrapper a:hover{text-decoration:none; cursor:pointer; color:#fff;}
+.header .outer .text .btn-wrapper .btn{display:inline-block; font-size:18px; hegith:30px; width:145px; border-radius:6px; border:1px solid #fff; line-height:30px; text-align:center;}
+.header .outer .text .btn-wrapper .btn-right{margin-left:20px;}
+/*.header .outer .text .btn-wrapper .btn:hover{background:hsla(0, 0%, 100%, .2); }*/
+
+.container{margin:auto; background-color:#f6f6f6; min-width:1000px;}
+.container .coupon{background: #f6f6f6 url(../images/container-bg.jpg) no-repeat 50%; text-align:center; height:553px;}
+.container .coupon-text{width:50%; float:left; text-align:right; color:#79797e;}
+.container .coupon-text .title{margin:75px 10px 20px 0; font-size:40px; font-weight:300; color:#e00;}
+.container .coupon-text .info{font-size:26px; font-weight:200;}
+.container .coupon-text .sub-info{font-size:12px; font-weight:200; margin:5px 0;}
+.container .coupon-text .sub-info span{margin-right:10px;}
+.container .coupon-img{width:344px; float:left; margin-top:88px;}
+.container .btn{background-color:#f6f6f6; padding:38px 0;}
+.container .btn .btn-text{padding:15px 64px; margin:auto; background-color:#fb541f; font-size:34px; font-weight:300; color:#fff; width:137px; border-radius:8px;}
+
+.container .product{padding-bottom:87px; background-color:#f6f6f6;}
+.container .product .food{width:50%; float:left; text-align:center; background-color:#f6f6f6; background-size:481px 481px; background-repeat:no-repeat;}
+.container .product .food .food-detail{background-color:#fff; width:500px; border:1px solid #efefef;}
+.container .product .food .food-detail-left{float:right; border-right:none;}
+/*.container .product .food .food-detail-top{border-bottom:none;}*/
+.container .product .food .food-img{width:94%;}
+.container .product .food .food-info .title{font-size:40px; font-weight:300;}
+.container .product .food .food-info .info{color:#79797e; font-size:20px; font-weight:200; margin:10px 0;}
+.container .product .food-bz{background-image:url(../images/bz-bg.png); background-position:20% 80%;}
+.container .product .food-bz .food-detail{border-top-left-radius:10px;}
+.container .product .food-sushi{background-image:url(../images/sushi-bg.png); background-position:80% 20%;}
+.container .product .food-sushi .food-detail{border-top-right-radius:10px;}
+.container .product .food-stew{background-image:url(../images/stew-bg.png); background-position:20% 80%;}
+.container .product .food-stew .food-detail{border-bottom-left-radius:10px;}
+.container .product .food-bread{background-image:url(../images/bread-bg.png); background-position:80% 20%;}
+.container .product .food-bread .food-detail{border-bottom-right-radius:10px;}
+
+.container .carousel{height:400px; background-color:#fa6f2c; text-align:center;}
+.container .carousel .carousel-info{width:1000px; margin:auto;}
+.container .carousel img{margin-bottom:190px;}
+/*.container .carousel img:hover{}*/
+.container .carousel .item-center{width:900px; display:inline-block; height:400px; position:relative; padding:0; overflow:hidden;}
+.container .carousel .item-center ul{position:relative; padding:inherit; margin:0; width:900px; height:400px;}
+/*.container .carousel .item-center ul .current{}*/
+.container .carousel .item-center .title{color:#fff; font-size:40px; font-weight:300; margin-top:150px;}
+.container .carousel .item-center .content{color:#fff; font-size:20px; font-weight:200; margin-top:20px;}
+.container .carousel .item-center .count li{margin:5px 8px; width:40px; display:inline-block;}
+.container .carousel .item-center .count .current{opacity:1;}
+
+.container .feedback{width:1000px; text-align:center; margin:auto;}
+.container .feedback .contact-item{width:500px; margin:auto; float:left;}
+.container .feedback .contact-item .title{margin-top:60px; color:#e86b2b; font-size:30px; font-weight:300;}
+.container .feedback .contact-item .text{margin-bottom:62px; font-size:18px; font-weight:200;}
+
+.footer{text-align:center; background-color:#f9fafb; padding:15px 200px; color:#383a44;}
+.footer .footer_wrapper{width:1000px; margin:auto;}
+.footer .item{width:33.33%; float:left; margin:44px 0;}
+.footer .item .footer-title{margin-bottom:20px; font-size:14px;}
+.footer .item .text{margin:10px 0; font-size:14px; font-weight:200;}
+.footer .item-left{text-align:left;}
+.footer .item-right{text-align:right;}
+.footer .register{background-color:#f9fafb; border-top:1px solid #ddd; margin-bottom:43px; font-size:12px;}
+.footer .register .company{margin:40px 0 10px;}
+.footer .register .num img{vertical-align:bottom;}

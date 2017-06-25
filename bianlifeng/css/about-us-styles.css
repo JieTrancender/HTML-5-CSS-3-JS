@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*css document*/
+
+/*初始化标签防止不支持html5*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
+
+/*全局控制*/
+body{margin:0; padding:0; font-size:14px; font-family:"宋体"; line-height:1.5;}
+
+/*重置浏览器默认样式*/
+*{margin:0; padding:0; border:0; list-style:none; outline:normal; border:0; vertical-align:baseline;}
+
+/*公共样式*/
+a{color:#938e8e; text-decoration:none; cursor:pointer;}
+.clear{clear:both;}
+.page_width{width:1000px; margin:auto;}
+.text-right{text-align:right;}
+.gray{color:#938e8e;}
+
+
+#wrapper{margin:auto; min-width:1200px; background-color:#f6f6f6;}
+.header{background-color:#ff5200; height:95px;}
+/*.header .head_index_wrapper{position:fixed; width:100%; z-index:10000; background-color:#ff5200; margin:auto;}*/
+.header .inner{max-width:1000px; width:100%; margin:auto; height:95px;}
+.header .inner .logo{float:left; height:69px; margin-top:20px;}
+.header .inner .navs{float:right; margin:35px 10px 0 0; list-style-type:none; font-size:15px;}
+.header .inner .navs li{margin:5px 20px; display:inline-block;}
+.header .inner .navs li:last-child{margin-right:0;}
+.header .inner .navs li a{color:#f6b3a0; text-decoration:none;}
+.header .inner .navs .active a, .header .inner .navs li a:hover{color:#fff;}
+
+#container{background-color:#f6f6f6; margin:0 auto;}
+#content{background-color:#fff; margin:30px auto; width:1000px; border:1px solid #efefef; border-radius:10px; padding:45px 0;}
+.about{font-size:16px; font-weight:200; padding:25px 66px 20px; line-height:1.5;}
+.about, .title{text-align:center;}
+.title{display:inline-block; width:100%; font-size:20px; font-weight:300; color:#ff5201; margin-bottom:21px;}
+
+.footer{text-align:center; background-color:#f9fafb; padding:15px 200px; color:#383a44;}
+.footer .footer_wrapper{width:1000px; margin:auto;}
+.footer .item{width:33.33%; float:left; margin:44px 0;}
+.footer .item .footer-title{margin-bottom:20px; font-size:14px;}
+.footer .item .text{margin:10px 0; font-size:14px; font-weight:200;}
+.footer .item-left{text-align:left;}
+.footer .item-right{text-align:right;}
+.footer .register{background-color:#f9fafb; border-top:1px solid #ddd; margin-bottom:43px; font-size:12px;}
+.footer .register .company{margin:40px 0 10px;}
+.footer .register .num img{vertical-align:bottom;}
